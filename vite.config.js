@@ -3,6 +3,9 @@ import react from "@vitejs/plugin-react";
 import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 
 export default defineConfig({
+  test: {
+    environment: "happy-dom",
+  },
   server: {
     proxy: {
       "/api": {
