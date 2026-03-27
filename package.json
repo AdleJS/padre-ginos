@@ -5,6 +5,8 @@
   "private": true,
   "scripts": {
     "test": "vitest",
+    "test:ui": "vitest --ui",
+    "coverage": "vitest --coverage",
     "build": "vite build",
     "dev": "bunx --bun vite",
     "preview": "vite preview"
@@ -15,13 +17,16 @@
     "@testing-library/react": "^16.3.2",
     "@types/bun": "latest",
     "@vitejs/plugin-react": "4.3.1",
+    "@vitest/coverage-v8": "^4.1.2",
+    "@vitest/ui": "4.1.2",
     "eslint": "9.9.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-react": "7.37.1",
     "globals": "15.9.0",
     "happy-dom": "^20.8.8",
     "vite": "5.4.2",
-    "vitest": "^4.1.2"
+    "vitest": "^4.1.2",
+    "vitest-fetch-mock": "^0.4.5"
   },
   "peerDependencies": {
     "typescript": "^5.9.3"

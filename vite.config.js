@@ -5,6 +5,9 @@ import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 export default defineConfig({
   test: {
     environment: "happy-dom",
+    coverage: {
+      reporter: ["text", "json", "html"],
+    },
   },
   server: {
     proxy: {
